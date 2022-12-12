@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .container {
@@ -157,12 +157,24 @@ body {
   height: 15.9em;
   margin-top: -3em;
 }
+.progress__bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .progress__bars-item {
-  width: 26.8em;
-  height: 29em;
   padding: 34px 30px;
   background: #fdfdfe;
   border-radius: 17px;
+}
+.progress__bars-item:first-child {
+  margin-right: 2em;
+  width: 26.8em;
+  height: 29em;
+}
+.progress__bars-item:last-child {
+  width: 34.8em;
+  height: 29em;
 }
 .progress__bars-item-content {
   display: -webkit-box;
@@ -171,7 +183,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
 }
 .progress__bars-item-title {
   font-weight: 600;
@@ -182,6 +193,30 @@ body {
 }
 .progress__bars-item-subscription {
   margin: 0;
+}
+.progress__bars-item-subscriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.progress__bars-item-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 558px;
+  position: relative;
+}
+.progress__bars-item-bar {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.progress__bars-item-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .progress__courses {
   display: -webkit-box;

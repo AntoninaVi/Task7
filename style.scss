@@ -4,7 +4,7 @@ body {
     color: #000000;
 }
 .wrapper {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 .container {
     max-width: 1920px;
@@ -147,21 +147,27 @@ body {
     }
 
     &__bars {
-     
+        display: flex;
     }
 
     &__bars-item {
-        width: 26.8em;
-        height: 29em;
         padding: 34px 30px;
         background: #fdfdfe;
         border-radius: 17px;
+        &:first-child {
+            margin-right: 2em;
+            width: 26.8em;
+            height: 29em;
+        }
+        &:last-child{
+            width: 34.8em;
+            height: 29em;
+        }
     }
 
     &__bars-item-content {
         display: flex;
         align-items: center;
-        justify-items: ;
     }
 
     &__bars-item-title {
@@ -178,7 +184,22 @@ body {
     &__bars-item-subscription {
         margin: 0;
     }
+    &__bars-item-subscriptions {
+        display: flex;
+    }
+    &__bars-item-bars{
+        display: flex;
+        flex-grow: 1;
+        width: 558px;
+        position: relative;
 
+    }
+    &__bars-item-bar{
+        transform: rotate(90deg);
+    }
+    &__bars-item-skills {
+        display: flex;
+    }
     &__courses {
         display: flex;
     }
@@ -201,6 +222,7 @@ body {
     &__courses-item-link {
     }
 }
+
 .profile {
     &__navigation {
     }
