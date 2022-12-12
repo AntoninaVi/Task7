@@ -29,6 +29,9 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  margin-right: 3.1em;
+  background-color: #ffffff;
+  padding: 3em 2.5em 1.5em 4.1em;
 }
 .main-menu__logotype {
   display: -webkit-box;
@@ -116,6 +119,10 @@ body {
   border-radius: 14px;
 }
 
+.progress {
+  width: 63.8em;
+  margin-right: 3.1em;
+}
 .progress__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,7 +130,29 @@ body {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  margin-bottom: 10px;
+  margin-bottom: 3.3em;
+}
+.progress__navigation-date {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #111026;
+  margin-right: 1.8em;
+}
+.progress__navigation-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e5e9fa;
+  border-radius: 12px;
+  width: 3.3em;
+  height: 3.3em;
 }
 .progress__main {
   display: -webkit-box;
@@ -139,6 +168,7 @@ body {
   height: 13.1em;
   background: #f7e5e9;
   border-radius: 17px;
+  margin-bottom: 2.7em;
 }
 .progress__main-title {
   font-weight: 700;
@@ -175,14 +205,24 @@ body {
 .progress__bars-item:last-child {
   width: 34.8em;
   height: 29em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .progress__bars-item-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .progress__bars-item-title {
   font-weight: 600;
@@ -192,34 +232,48 @@ body {
   margin: 0;
 }
 .progress__bars-item-subscription {
-  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a2c2;
+  margin-right: 3.1em;
+}
+.progress__bars-item-subscription:last-child {
+  margin-right: 0;
 }
 .progress__bars-item-subscriptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .progress__bars-item-bars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 558px;
-  position: relative;
+  margin-top: 3em;
 }
 .progress__bars-item-bar {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  margin-right: 1.5em;
 }
 .progress__bars-item-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .progress__courses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.profile {
+  background-color: #ffffff;
+  width: 29.3em;
 }
