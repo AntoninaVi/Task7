@@ -5,6 +5,8 @@ body {
 }
 .wrapper {
     background-color: #e5e5e5;
+
+    padding: 3em 3em 1.5em 3em;
 }
 .container {
     max-width: 1920px;
@@ -12,13 +14,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3em;
-    padding-bottom: 1.5em;
 }
 .main-menu {
     display: grid;
     grid-template-columns: 1fr;
-    margin-right: 3.1em;
     background-color: #ffffff;
     padding: 3em 2.5em 1.5em 4.1em;
     &__logotype {
@@ -104,8 +103,11 @@ body {
     }
 }
 .progress {
+    background-color: #f5f5fb;
     width: 63.8em;
-    margin-right: 3.1em;
+    padding-top: 4.8em;
+    padding-right: 3.1em;
+    padding-left: 3.1em;
 
     &__navigation {
         display: flex;
@@ -167,6 +169,7 @@ body {
 
     &__bars {
         display: flex;
+        margin-bottom: 2.2em;
     }
 
     &__bars-item {
@@ -229,26 +232,63 @@ body {
         display: flex;
         justify-content: space-evenly;
     }
-    &__courses {
+    &__courses-items {
         display: flex;
     }
 
-    &__courses-title {
+    &__courses-content {
+        display: flex;
+        justify-content: space-between;
     }
-
-    &__courses-link {
+    &__courses-content-title {
     }
-
+    &__courses-content-link {
+    }
     &__courses-item {
+        display: flex;
+        width: 20.1em;
+        padding: 1.4em 1.4em;
+        &:nth-child(1) {
+            background-color: #4d4cac;
+            border-radius: 20px;
+            margin-right: 1.5em;
+        }
+        &:nth-child(2) {
+            background: #9698d6;
+            border-radius: 20px;
+            margin-right: 1.5em;
+        }
+        &:nth-child(3) {
+            background: #ff808b;
+            border-radius: 20px;
+        }
     }
-
+    &__courses-item-text {
+        display: flex;
+        flex-direction: column;
+    }
     &__courses-item-level {
+        padding: 17px 19px;
+        margin-right: 1.1em;
+        border-radius: 12px;
+        background: rgba(254, 254, 254, 0.2);
+        color: #ffffff;
     }
 
     &__courses-item-subscription {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fefefe;
+        opacity: 0.8;
     }
 
     &__courses-item-link {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        color: #fefefe;
+        text-decoration: none;
     }
 }
 
