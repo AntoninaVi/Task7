@@ -188,7 +188,6 @@ body {
             width: 34.8em;
             height: 29em;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
         }
     }
@@ -199,12 +198,12 @@ body {
         padding-top: 1.5em;
         padding-bottom: 1.6em;
         border-bottom: 1px solid #000000;
-        &:nth-child(1){
+        &:nth-child(1) {
             border: none;
             padding-top: 2.1em;
             padding-bottom: 2.6em;
         }
-        &:last-child{
+        &:last-child {
             border: none;
         }
     }
@@ -239,19 +238,48 @@ body {
     &__bars-item-subscriptions {
         display: flex;
         justify-content: space-evenly;
+        margin-bottom: 1.7em;
     }
     &__bars-item-bars {
         display: flex;
+        align-items: center;
         margin-top: 3em;
+        margin-left: 2.9em;
+        margin-bottom: 3.2em;
+        height: 12.2em;
     }
     &__bars-item-bar {
         transform: rotate(270deg);
-        margin-right: 1.5em;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        margin-bottom: 3.5em;
+        text-align: left;
+        margin-left: -9em;
+        width: 100%;
+        min-width: 14em;
+        height: 5px;
     }
     &__bars-item-skills {
         display: flex;
         justify-content: space-evenly;
     }
+
+    &__bars-item-skills--paragraph {
+        margin-right: 2.2em;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #FF808B;
+            margin-left: -1.3em;
+            
+        }
+    }
+
     &__courses-items {
         display: flex;
     }
@@ -329,6 +357,9 @@ body {
     }
     &__courses-item-img {
     }
+}
+progress {
+    height: 5px;
 }
 
 .profile {

@@ -218,9 +218,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -277,17 +274,30 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 1.7em;
 }
 .progress__bars-item-bars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 3em;
+  margin-left: 2.9em;
+  margin-bottom: 3.2em;
+  height: 12.2em;
 }
 .progress__bars-item-bar {
+  transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  margin-right: 1.5em;
+  -moz-transform: rotate(270deg);
+  margin-bottom: 3.5em;
+  text-align: left;
+  margin-left: -9em;
+  width: 100%;
+  min-width: 14em;
+  height: 5px;
 }
 .progress__bars-item-skills {
   display: -webkit-box;
@@ -296,6 +306,24 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+.progress__bars-item-skills--paragraph {
+  margin-right: 2.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.progress__bars-item-skills--paragraph::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #FF808B;
+  margin-left: -1.3em;
 }
 .progress__courses-items {
   display: -webkit-box;
@@ -388,6 +416,10 @@ body {
   color: #fefefe;
   text-decoration: none;
 }
+progress {
+  height: 5px;
+}
+
 .profile {
   background-color: #ffffff;
   width: 29.3em;
