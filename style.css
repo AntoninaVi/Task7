@@ -119,6 +119,19 @@ body {
   border-radius: 14px;
 }
 
+.main-menu__list-item:nth-of-type(5)::before {
+  content: "4";
+  width: 1em;
+  height: 1em;
+  padding: 0.2em 0.5em;
+  background-color: #ff808b;
+  border-radius: 100%;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 13px;
+  color: #FEFEFE;
+}
+
 .progress {
   background-color: #f5f5fb;
   width: 63.8em;
@@ -243,13 +256,20 @@ body {
   border: none;
 }
 .progress__bars-item-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
   color: #111026;
   margin: 0;
 }
 .progress__bars-item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -308,6 +328,10 @@ body {
           justify-content: space-evenly;
 }
 .progress__bars-item-skills--paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a2c2;
   margin-right: 2.2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,8 +346,17 @@ body {
   height: 12px;
   border-radius: 50%;
   position: absolute;
-  background-color: #FF808B;
+  background-color: #ff808b;
   margin-left: -1.3em;
+}
+.progress__bars-item-skills--paragraph:nth-of-type(2)::before {
+  background-color: #4d4cac;
+}
+.progress__bars-item-skills--paragraph:nth-of-type(3)::before {
+  background-color: #5e81f4;
+}
+.progress__bars-item-skills--paragraph:nth-of-type(4)::before {
+  background-color: #c8c9e9;
 }
 .progress__courses-items {
   display: -webkit-box;
@@ -449,7 +482,7 @@ progress {
 .profile__information-photo {
   width: 100%;
   max-width: 10.5em;
-  height: 10.5em;
+  max-height: 10.5em;
   margin-bottom: 1.8em;
 }
 .profile__information-title {
