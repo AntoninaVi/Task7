@@ -1,12 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins";
   font-style: normal;
   color: #000000;
-}
-
-.wrapper {
-  background-color: #e5e5e5;
-  padding: 3em 3em 1.5em 3em;
 }
 
 .container {
@@ -120,9 +122,9 @@ body {
 .progress {
   background-color: #f5f5fb;
   width: 63.8em;
-  padding-top: 4.8em;
-  padding-right: 3.1em;
-  padding-left: 3.1em;
+  padding: 3em 3em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .progress__navigation {
   display: -webkit-box;
@@ -131,6 +133,9 @@ body {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 3.3em;
 }
 .progress__navigation-date {
@@ -159,12 +164,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 63.6em;
   height: 13.1em;
   background: #f7e5e9;
@@ -187,6 +192,9 @@ body {
 .progress__main-img {
   height: 15.9em;
   margin-top: -3em;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 .progress__bars {
   display: -webkit-box;
@@ -195,7 +203,7 @@ body {
   margin-bottom: 2.2em;
 }
 .progress__bars-item {
-  padding: 34px 30px;
+  padding: 0 1.7em 2.3em 1.7em;
   background: #fdfdfe;
   border-radius: 17px;
 }
@@ -222,9 +230,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.5em;
+  padding-bottom: 1.6em;
+  border-bottom: 1px solid #000000;
+}
+.progress__bars-item-content:nth-child(1) {
+  border: none;
+  padding-top: 2.1em;
+  padding-bottom: 2.6em;
+}
+.progress__bars-item-content:last-child {
+  border: none;
 }
 .progress__bars-item-title {
   font-weight: 600;
@@ -233,12 +252,20 @@ body {
   color: #111026;
   margin: 0;
 }
+.progress__bars-item-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111026;
+  text-decoration: none;
+}
 .progress__bars-item-subscription {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #a2a2c2;
   margin-right: 3.1em;
+  text-align: left;
 }
 .progress__bars-item-subscription:last-child {
   margin-right: 0;
@@ -282,13 +309,39 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2.1em;
+}
+.progress__courses-content-title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #111026;
+}
+.progress__courses-content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111026;
+  text-decoration: none;
+}
+.progress__courses-content-img {
+  margin-left: 1.3em;
 }
 .progress__courses-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 20.1em;
-  padding: 1.4em 1.4em;
+  padding: 1.4em;
 }
 .progress__courses-item:nth-child(1) {
   background-color: #4d4cac;
@@ -326,6 +379,7 @@ body {
   line-height: 21px;
   color: #fefefe;
   opacity: 0.8;
+  margin: 0;
 }
 .progress__courses-item-link {
   font-weight: 500;
@@ -334,8 +388,152 @@ body {
   color: #fefefe;
   text-decoration: none;
 }
-
 .profile {
   background-color: #ffffff;
   width: 29.3em;
+  padding-left: 2.8em;
+  padding-right: 5.6em;
+}
+.profile__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3em;
+}
+.profile__navigation-logout {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
+}
+.profile__information {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.profile__information-photo {
+  width: 100%;
+  max-width: 10.5em;
+  height: 10.5em;
+  margin-bottom: 1.8em;
+}
+.profile__information-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #111026;
+  margin-bottom: 0.7em;
+}
+.profile__information-subscription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a2a2c2;
+}
+.profile__levels {
+  margin-bottom: 5.5em;
+}
+.profile__levels-item {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+  justify-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile__levels-item:nth-child(1) {
+  margin-bottom: 2.5em;
+}
+.profile__levels-item-content {
+  margin-left: -1em;
+}
+.profile__levels-item-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.4em;
+  background: #f5f5f7;
+  border-radius: 12px;
+}
+.profile__levels-item-title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #111026;
+}
+.profile__levels-item-subscription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a2c2;
+  margin: 0;
+  white-space: nowrap;
+}
+.profile__levels-item-progressbar {
+  width: 6.9em;
+}
+.profile__reminders-title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 1.6em;
+  color: #111026;
+}
+.profile__reminders-content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1em, 5em));
+  justify-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.3em;
+}
+.profile__reminders-content:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.profile__reminders-content-text {
+  text-align: left;
+}
+.profile__reminders-content-icon {
+  padding: 1.1em 1.1em;
+  border-radius: 12px;
+}
+.profile__reminders-content-icon:nth-child(1) {
+  color: #6083f4;
+  background: #eef2fd;
+}
+.profile__reminders-content-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #131336;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+.profile__reminders-content-subscription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a2c2;
+}
+
+.profile__reminders-content:nth-child(2) .profile__reminders-content-icon {
+  background: #fef2f3;
+  color: #ff606d;
 }

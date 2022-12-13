@@ -1,12 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Poppins";
     font-style: normal;
     color: #000000;
 }
 .wrapper {
-    background-color: #e5e5e5;
-
-    padding: 3em 3em 1.5em 3em;
 }
 .container {
     max-width: 1920px;
@@ -105,13 +107,13 @@ body {
 .progress {
     background-color: #f5f5fb;
     width: 63.8em;
-    padding-top: 4.8em;
-    padding-right: 3.1em;
-    padding-left: 3.1em;
+    padding: 3em 3em;
+    box-sizing: content-box;
 
     &__navigation {
         display: flex;
         justify-content: right;
+        align-items: center;
         margin-bottom: 3.3em;
     }
 
@@ -135,8 +137,8 @@ body {
 
     &__main {
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
+        justify-content: space-evenly;
         width: 63.6em;
         height: 13.1em;
         background: #f7e5e9;
@@ -165,6 +167,7 @@ body {
     &__main-img {
         height: 15.9em;
         margin-top: -3em;
+        justify-content: right;
     }
 
     &__bars {
@@ -173,7 +176,7 @@ body {
     }
 
     &__bars-item {
-        padding: 34px 30px;
+        padding: 0 1.7em 2.3em 1.7em;
         background: #fdfdfe;
         border-radius: 17px;
         &:first-child {
@@ -192,7 +195,18 @@ body {
 
     &__bars-item-content {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-top: 1.5em;
+        padding-bottom: 1.6em;
+        border-bottom: 1px solid #000000;
+        &:nth-child(1){
+            border: none;
+            padding-top: 2.1em;
+            padding-bottom: 2.6em;
+        }
+        &:last-child{
+            border: none;
+        }
     }
 
     &__bars-item-title {
@@ -204,6 +218,11 @@ body {
     }
 
     &__bars-item-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #111026;
+        text-decoration: none;
     }
 
     &__bars-item-subscription {
@@ -212,6 +231,7 @@ body {
         line-height: 21px;
         color: #a2a2c2;
         margin-right: 3.1em;
+        text-align: left;
         &:last-child {
             margin-right: 0;
         }
@@ -239,15 +259,31 @@ body {
     &__courses-content {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 2.1em;
     }
     &__courses-content-title {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        color: #111026;
     }
     &__courses-content-link {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #111026;
+        text-decoration: none;
+    }
+    &__courses-content-img {
+        margin-left: 1.3em;
     }
     &__courses-item {
         display: flex;
+        align-items: center;
         width: 20.1em;
-        padding: 1.4em 1.4em;
+        padding: 1.4em;
         &:nth-child(1) {
             background-color: #4d4cac;
             border-radius: 20px;
@@ -281,6 +317,7 @@ body {
         line-height: 21px;
         color: #fefefe;
         opacity: 0.8;
+        margin: 0;
     }
 
     &__courses-item-link {
@@ -290,29 +327,155 @@ body {
         color: #fefefe;
         text-decoration: none;
     }
+    &__courses-item-img {
+    }
 }
 
 .profile {
     background-color: #ffffff;
     width: 29.3em;
+    padding-left: 2.8em;
+    padding-right: 5.6em;
+
     &__navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3em;
     }
 
     &__navigation-logout {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        text-decoration: none;
+        color: #000000;
     }
 
     &__navigation-btn {
     }
 
     &__information {
+        text-align: center;
+        margin-bottom: 4em;
     }
 
     &__information-photo {
+        width: 100%;
+        max-width: 10.5em;
+        height: 10.5em;
+        margin-bottom: 1.8em;
     }
 
     &__information-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #111026;
+        margin-bottom: 0.7em;
     }
 
     &__information-subscription {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #a2a2c2;
     }
+
+    &__levels {
+        margin-bottom: 5.5em;
+    }
+
+    &__levels-item {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+        justify-items: baseline;
+        align-items: center;
+        &:nth-child(1) {
+            margin-bottom: 2.5em;
+        }
+    }
+
+    &__levels-item-content {
+        margin-left: -1em;
+    }
+    &__levels-item-level {
+        display: flex;
+        align-items: center;
+        padding: 1.4em;
+        background: #f5f5f7;
+        border-radius: 12px;
+    }
+    &__levels-item-title {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        color: #111026;
+    }
+
+    &__levels-item-subscription {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #a2a2c2;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    &__levels-item-progressbar {
+        width: 6.9em;
+    }
+
+    &__reminders {
+    }
+    &__reminders-title {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        margin-bottom: 1.6em;
+        color: #111026;
+    }
+    &__reminders-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1em, 5em));
+        justify-items: baseline;
+        align-items: center;
+        margin-bottom: 2.3em;
+        &:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__reminders-content-text {
+        text-align: left;
+    }
+    &__reminders-content-icon {
+        padding: 1.1em 1.1em;
+        border-radius: 12px;
+        &:nth-child(1) {
+            color: #6083f4;
+            background: #eef2fd;
+        }
+    }
+
+    &__reminders-content-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #131336;
+        white-space: nowrap;
+        margin-bottom: 8px;
+    }
+
+    &__reminders-content-subscription {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #a2a2c2;
+    }
+}
+.profile__reminders-content:nth-child(2) .profile__reminders-content-icon {
+    background: #fef2f3;
+    color: #ff606d;
 }
