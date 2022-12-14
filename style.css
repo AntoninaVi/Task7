@@ -108,6 +108,10 @@ body {
   color: #a2a2c2;
   margin-bottom: 2em;
 }
+.main-menu__upgrade-colortext {
+  font-weight: 600;
+  color: #111026;
+}
 .main-menu__upgrade-button {
   font-weight: 500;
   font-size: 17px;
@@ -129,7 +133,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 13px;
-  color: #FEFEFE;
+  color: #fefefe;
 }
 
 .progress {
@@ -484,6 +488,25 @@ progress {
   max-width: 10.5em;
   max-height: 10.5em;
   margin-bottom: 1.8em;
+}
+.profile__information-button {
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  background: #5e81f4;
+  border: none;
+  color: #ffffff;
+  position: relative;
+  top: -3em;
+  right: 3.5em;
+  cursor: pointer;
+}
+.profile__information-button:hover {
+  background-color: #f5f5fb;
+  color: #5e81f4;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 .profile__information-title {
   font-weight: 700;
