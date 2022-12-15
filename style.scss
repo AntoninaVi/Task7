@@ -23,8 +23,10 @@ body {
     margin-right: auto;
     @media screen and (max-width: 1200px) {
         display: grid;
-        grid-template-columns: 30% 50%;
+        grid-template-columns: 40% 50%;
         grid-gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -48,7 +50,7 @@ body {
             bottom: 25em;
         }
         @media screen and (max-width: 800px) {
-            bottom: 23em;
+            bottom: 98vh;
             left: 20vw;
         }
     }
@@ -151,8 +153,8 @@ body {
         top: -31em;
     }
     @media screen and (max-width: 800px) {
-        top: -33em;
-        left: 86vw;
+        left: 115vw;
+        top: -54em;
     }
 }
 
@@ -191,6 +193,9 @@ body {
     top: 9px;
 }
 .menu__box {
+    position: relative;
+    left: -43vw;
+    top: -6vh;
     display: grid;
     grid-template-columns: 53% 48%;
     grid-template-rows: 36% 41%;
@@ -203,8 +208,6 @@ body {
     max-height: 60vh;
     background: #e2e2f5;
     z-index: 6;
-    bottom: 30%;
-    left: 11%;
     border-radius: 20px;
 }
 .menu__item {
@@ -261,8 +264,9 @@ body {
     box-sizing: content-box;
     @media screen and (max-width: 800px) {
         position: relative;
-        top: 80vh;
+        top: 75vh;
         right: 35vw;
+        padding: 3em 8vw;
     }
 
     &__navigation {
@@ -294,11 +298,19 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 63.6em;
-        height: 13.1em;
+        width: 100%;
+        max-width: 63.6em;
+        min-height: 13.1em;
         background: #f7e5e9;
         border-radius: 17px;
         margin-bottom: 2.7em;
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+            padding: 1em;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__main-content {
@@ -323,11 +335,18 @@ body {
         height: 15.9em;
         margin-top: -3em;
         justify-content: right;
+        @media screen and (max-width: 800px) {
+            margin-top: 0;
+        }
     }
 
     &__bars {
         display: flex;
         margin-bottom: 2.2em;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__bars-item {
@@ -338,6 +357,10 @@ body {
             margin-right: 2em;
             width: 26.8em;
             height: 29em;
+            @media screen and (max-width: 800px) {
+                margin-right: 0;
+                margin-bottom: 1em;
+            }
         }
         &:last-child {
             width: 34.8em;
@@ -465,6 +488,9 @@ body {
         @media screen and (max-width: 1200px) {
             margin-bottom: 1em;
         }
+        @media screen and (max-width: 800px) {
+            justify-content: space-evenly;
+        }
     }
     &__courses-content-title {
         font-weight: 500;
@@ -562,13 +588,19 @@ progress {
     }
     @media screen and (max-width: 800px) {
         display: flex;
-        top: 20vh;
+        left: 17vw;
+        top: 28vh;
     }
 
     &__navigation {
         display: flex;
         justify-content: space-between;
         margin-bottom: 3em;
+        @media screen and (max-width: 800px) {
+            position: relative;
+            left: -10vw;
+            bottom: 20vh;
+        }
     }
 
     &__navigation-logout {
@@ -584,6 +616,8 @@ progress {
         margin-bottom: 4em;
         @media screen and (max-width: 800px) {
             min-width: 38vw;
+            position: relative;
+            left: 20vw;
         }
     }
 
@@ -639,6 +673,10 @@ progress {
         // }
         @media screen and (max-width: 1200px) {
             margin-bottom: 1em;
+        }
+        @media screen and (max-width: 800px) {
+            position: absolute;
+            left: 80vw;
         }
     }
 
@@ -701,10 +739,12 @@ progress {
         //     grid-template-rows: 10% 26% 34%;
         //     display: grid;
         // }
-        @media screen and (max-width:800px){
+        @media screen and (max-width: 800px) {
             grid-template-columns: 171% 100%;
             -ms-grid-rows: 10% 26% 34%;
             grid-template-rows: 26% 34%;
+            position: absolute;
+            bottom: -10vh;
         }
     }
     &__reminders-title {
@@ -722,6 +762,10 @@ progress {
         &:nth-child(1) {
             display: flex;
             justify-content: space-between;
+        }
+        @media screen and (max-width: 800px) {
+            position: relative;
+            top: 2vh;
         }
     }
 

@@ -34,9 +34,11 @@ body {
   .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 30% 1rem 50%;
-    grid-template-columns: 30% 50%;
+    -ms-grid-columns: 40% 1rem 50%;
+    grid-template-columns: 40% 50%;
     grid-gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -66,7 +68,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .main-menu__logotype {
-    bottom: 23em;
+    bottom: 98vh;
     left: 20vw;
   }
 }
@@ -181,8 +183,8 @@ body {
 }
 @media screen and (max-width: 800px) {
   .burger-menu {
-    top: -33em;
-    left: 86vw;
+    left: 115vw;
+    top: -54em;
   }
 }
 
@@ -225,6 +227,9 @@ body {
 }
 
 .menu__box {
+  position: relative;
+  left: -43vw;
+  top: -6vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 53% 0.5em 48%;
@@ -240,8 +245,6 @@ body {
   max-height: 60vh;
   background: #e2e2f5;
   z-index: 6;
-  bottom: 30%;
-  left: 11%;
   border-radius: 20px;
 }
 
@@ -330,8 +333,9 @@ body {
 @media screen and (max-width: 800px) {
   .progress {
     position: relative;
-    top: 80vh;
+    top: 75vh;
     right: 35vw;
+    padding: 3em 8vw;
   }
 }
 .progress__navigation {
@@ -378,11 +382,24 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 63.6em;
-  height: 13.1em;
+  width: 100%;
+  max-width: 63.6em;
+  min-height: 13.1em;
   background: #f7e5e9;
   border-radius: 17px;
   margin-bottom: 2.7em;
+}
+@media screen and (max-width: 800px) {
+  .progress__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 1em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .progress__main-title {
   font-weight: 700;
@@ -404,11 +421,27 @@ body {
       -ms-flex-pack: right;
           justify-content: right;
 }
+@media screen and (max-width: 800px) {
+  .progress__main-img {
+    margin-top: 0;
+  }
+}
 .progress__bars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.2em;
+}
+@media screen and (max-width: 800px) {
+  .progress__bars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .progress__bars-item {
   padding: 0 1.7em 2.3em 1.7em;
@@ -419,6 +452,12 @@ body {
   margin-right: 2em;
   width: 26.8em;
   height: 29em;
+}
+@media screen and (max-width: 800px) {
+  .progress__bars-item:first-child {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
 }
 .progress__bars-item:last-child {
   width: 34.8em;
@@ -583,6 +622,13 @@ body {
     margin-bottom: 1em;
   }
 }
+@media screen and (max-width: 800px) {
+  .progress__courses-content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 .progress__courses-content-title {
   font-weight: 500;
   font-size: 17px;
@@ -697,7 +743,8 @@ progress {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 20vh;
+    left: 17vw;
+    top: 28vh;
   }
 }
 .profile__navigation {
@@ -708,6 +755,13 @@ progress {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3em;
+}
+@media screen and (max-width: 800px) {
+  .profile__navigation {
+    position: relative;
+    left: -10vw;
+    bottom: 20vh;
+  }
 }
 .profile__navigation-logout {
   font-weight: 500;
@@ -723,6 +777,8 @@ progress {
 @media screen and (max-width: 800px) {
   .profile__information {
     min-width: 38vw;
+    position: relative;
+    left: 20vw;
   }
 }
 .profile__information-photo {
@@ -769,6 +825,12 @@ progress {
 @media screen and (max-width: 1200px) {
   .profile__levels {
     margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile__levels {
+    position: absolute;
+    left: 80vw;
   }
 }
 .profile__levels-item {
@@ -835,6 +897,8 @@ progress {
     grid-template-columns: 171% 100%;
     -ms-grid-rows: 10% 26% 34%;
     grid-template-rows: 26% 34%;
+    position: absolute;
+    bottom: -10vh;
   }
   .profile__reminders > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -876,6 +940,12 @@ progress {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .profile__reminders-content {
+    position: relative;
+    top: 2vh;
+  }
 }
 .profile__reminders-content-text {
   text-align: left;
