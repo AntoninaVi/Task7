@@ -181,28 +181,27 @@ body {
     display: grid;
     grid-template-columns: 53% 48%;
     grid-template-rows: 36% 41%;
-    grid-gap: 0.3em;
+    grid-gap: 0.5em;
     visibility: hidden;
-    padding: 1em 0;
+    padding: 2em;
     width: 100%;
     max-width: 90vw;
     height: 100%;
     max-height: 60vh;
-    background: #F5F5FB;
-    text-align: center;
+    background: #e2e2f5;
     z-index: 6;
     bottom: 30%;
     left: 11%;
+    border-radius: 20px;
     
 }
 .menu__item {
-    text-align: center;
+    text-align: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     color: #48464d;
-    text-align: center;
     text-decoration: none;
 }
 .menu__box .headers__nav-button:first-of-type {
