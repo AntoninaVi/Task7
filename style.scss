@@ -13,6 +13,9 @@ body {
     color: #000000;
     width: 100%;
     height: 100%;
+    @media screen and (min-width: 1920px) {
+        overflow: hidden;
+    }
 }
 .container {
     display: flex;
@@ -198,7 +201,7 @@ body {
 .menu__box {
     position: relative;
     left: -4em;
-    top: -19vh;
+    top: -12.5em;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -211,9 +214,13 @@ body {
     background: #e2e2f5;
     z-index: 6;
     border-radius: 20px;
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 440px) {
         max-height: 74vh;
         max-width: 90vw;
+    }
+    @media screen and (max-width: 375px) {
+        top: -13em;
+        max-height: 90vh;
     }
 }
 .menu__item {
@@ -654,11 +661,13 @@ progress::-webkit-progress-value {
     padding-right: 5.6em;
     @media screen and (max-width: 1200px) {
         position: absolute;
-        padding-top: 0;
+        top: 1em;
+        padding-top: 0.5em;
         width: 30%;
         background-color: transparent;
     }
     @media screen and (max-width: 800px) {
+        padding-top: 0;
         display: flex;
         left: 20vw;
         top: 28vh;
@@ -690,6 +699,9 @@ progress::-webkit-progress-value {
     &__information {
         text-align: center;
         margin-bottom: 4em;
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 1em;
+        }
         @media screen and (max-width: 800px) {
             min-width: 40vw;
             position: relative;
@@ -837,10 +849,10 @@ progress::-webkit-progress-value {
             top: -11vh;
         }
         @media screen and (max-width: 550px) {
-            left: -143vw;
+            left: -140vw;
         }
         @media screen and (max-width: 430px) {
-            left: -168vw;
+            left: -145vw;
         }
     }
     &__reminders-title {
