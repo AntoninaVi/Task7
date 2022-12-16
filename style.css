@@ -866,6 +866,7 @@ progress {
   .profile__levels {
     position: relative;
     left: 40vw;
+    bottom: 5vh;
   }
 }
 @media screen and (max-width: 550px) {
@@ -907,6 +908,12 @@ progress {
   max-width: 7.8em;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .profile__levels-item-content {
+    text-align: center;
+    margin: 1em 0 1em 0;
+  }
+}
 .profile__levels-item-level {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,7 +943,7 @@ progress {
   .profile__reminders {
     position: relative;
     left: -90vw;
-    top: -8vh;
+    top: -11vh;
   }
 }
 @media screen and (max-width: 550px) {
@@ -999,6 +1006,11 @@ progress {
   color: #131336;
   white-space: nowrap;
   margin-bottom: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .profile__reminders-content-title {
+    margin-top: 1em;
+  }
 }
 .profile__reminders-content-subscription {
   font-weight: 400;

@@ -637,7 +637,7 @@ progress {
         @media screen and (max-width: 550px) {
             min-width: 76vw;
         }
-        @media screen and (max-width:430px){
+        @media screen and (max-width: 430px) {
             left: 45vw;
         }
     }
@@ -694,6 +694,7 @@ progress {
         @media screen and (max-width: 800px) {
             position: relative;
             left: 40vw;
+            bottom: 5vh;
         }
         @media screen and (max-width: 550px) {
             left: 24vw;
@@ -725,6 +726,10 @@ progress {
         margin-left: 1.6em;
         max-width: 7.8em;
         width: 100%;
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+            margin: 1em 0 1em 0;
+        }
     }
     &__levels-item-level {
         display: flex;
@@ -765,7 +770,7 @@ progress {
         @media screen and (max-width: 800px) {
             position: relative;
             left: -90vw;
-            top: -8vh;
+            top: -11vh;
         }
         @media screen and (max-width: 550px) {
             left: -143vw;
@@ -817,6 +822,9 @@ progress {
         color: #131336;
         white-space: nowrap;
         margin-bottom: 8px;
+        @media screen and (max-width: 1200px) {
+            margin-top: 1em;
+        }
     }
 
     &__reminders-content-subscription {
