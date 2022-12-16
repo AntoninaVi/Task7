@@ -153,6 +153,12 @@ body {
         top: 11vh;
         left: 35vw;
     }
+    @media screen and (max-width: 500px) {
+        left: 63vw;
+    }
+    @media screen and (max-width: 370px) {
+        left: 95vw;
+    }
 }
 
 #menu__toggle {
@@ -628,6 +634,12 @@ progress {
             bottom: 10vh;
             left: 20vw;
         }
+        @media screen and (max-width: 550px) {
+            min-width: 76vw;
+        }
+        @media screen and (max-width:430px){
+            left: 45vw;
+        }
     }
 
     &__information-photo {
@@ -676,18 +688,18 @@ progress {
 
     &__levels {
         margin-bottom: 5.5em;
-        // @media screen and (max-width: 1200px) {
-        //     display: grid;
-        //     grid-template-columns: 126% 91%;
-        //     grid-template-rows: 4%;
-        //     align-items: center;
-        // }
         @media screen and (max-width: 1200px) {
             margin-bottom: 1em;
         }
         @media screen and (max-width: 800px) {
             position: relative;
             left: 40vw;
+        }
+        @media screen and (max-width: 550px) {
+            left: 24vw;
+        }
+        @media screen and (max-width: 430px) {
+            left: 68vw;
         }
     }
 
@@ -754,6 +766,12 @@ progress {
             position: relative;
             left: -90vw;
             top: -8vh;
+        }
+        @media screen and (max-width: 550px) {
+            left: -143vw;
+        }
+        @media screen and (max-width: 430px) {
+            left: -168vw;
         }
     }
     &__reminders-title {

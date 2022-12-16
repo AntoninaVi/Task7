@@ -193,6 +193,16 @@ body {
     left: 35vw;
   }
 }
+@media screen and (max-width: 500px) {
+  .burger-menu {
+    left: 63vw;
+  }
+}
+@media screen and (max-width: 370px) {
+  .burger-menu {
+    left: 95vw;
+  }
+}
 
 #menu__toggle {
   position: absolute;
@@ -789,6 +799,16 @@ progress {
     left: 20vw;
   }
 }
+@media screen and (max-width: 550px) {
+  .profile__information {
+    min-width: 76vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .profile__information {
+    left: 45vw;
+  }
+}
 .profile__information-photo {
   width: 100%;
   max-width: 10.5em;
@@ -846,6 +866,16 @@ progress {
   .profile__levels {
     position: relative;
     left: 40vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .profile__levels {
+    left: 24vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .profile__levels {
+    left: 68vw;
   }
 }
 .profile__levels-item {
@@ -907,6 +937,16 @@ progress {
     position: relative;
     left: -90vw;
     top: -8vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .profile__reminders {
+    left: -143vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .profile__reminders {
+    left: -168vw;
   }
 }
 .profile__reminders-title {
