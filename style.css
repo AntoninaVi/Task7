@@ -245,7 +245,7 @@ body {
 .menu__box {
   position: relative;
   left: -4em;
-  top: -31vh;
+  top: -19vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,9 +266,10 @@ body {
   z-index: 6;
   border-radius: 20px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 420px) {
   .menu__box {
-    top: -13em;
+    max-height: 74vh;
+    max-width: 90vw;
   }
 }
 
@@ -317,9 +318,9 @@ body {
 
 .main-menu__list-item:nth-of-type(5)::before {
   content: "4";
-  width: 1em;
-  height: 1em;
-  padding: 0.2em 0.5em;
+  position: absolute;
+  left: 6.2em;
+  padding: 0.3em 0.5em;
   background-color: #ff808b;
   border-radius: 100%;
   font-weight: 600;
