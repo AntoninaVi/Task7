@@ -320,9 +320,6 @@ body {
         }
     }
 
-    &__main-content {
-    }
-
     &__main-title {
         font-weight: 700;
         font-size: 25px;
@@ -396,7 +393,7 @@ body {
         }
         &:last-child {
             border: none;
-            padding-bottom:2.6em ;
+            padding-bottom: 2.6em;
         }
     }
 
@@ -589,8 +586,6 @@ body {
         line-height: 26px;
         color: #fefefe;
         text-decoration: none;
-    }
-    &__courses-item-img {
     }
 }
 progress {
@@ -878,6 +873,7 @@ progress::-webkit-progress-value {
     &__reminders-content-icon {
         padding: 1.1em 1.1em;
         border-radius: 12px;
+
         &:nth-child(1) {
             color: #6083f4;
             background: #eef2fd;
@@ -906,4 +902,17 @@ progress::-webkit-progress-value {
 .profile__reminders-content:nth-child(2) .profile__reminders-content-icon {
     background: #fef2f3;
     color: #ff606d;
+}
+.profile__reminders-content:nth-child(1) .profile__reminders-content-icon {
+    position: relative;
+    color: #a2a2c2;
+}
+.profile__reminders-content:nth-child(1) .profile__reminders-content-icon::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #ff808b;
+    border-radius: 20px;
 }

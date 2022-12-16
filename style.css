@@ -745,6 +745,7 @@ body {
   color: #fefefe;
   text-decoration: none;
 }
+
 progress {
   height: 5px;
   border: 0;
@@ -1069,4 +1070,19 @@ progress::-webkit-progress-value {
 .profile__reminders-content:nth-child(2) .profile__reminders-content-icon {
   background: #fef2f3;
   color: #ff606d;
+}
+
+.profile__reminders-content:nth-child(1) .profile__reminders-content-icon {
+  position: relative;
+  color: #a2a2c2;
+}
+
+.profile__reminders-content:nth-child(1) .profile__reminders-content-icon::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #ff808b;
+  border-radius: 20px;
 }
