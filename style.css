@@ -80,8 +80,8 @@ body {
   .main-menu__logotype {
     position: relative;
     visibility: visible;
-    z-index: 7;
-    left: 20em;
+    z-index: 1;
+    left: 23em;
     top: -3vh;
   }
 }
@@ -190,6 +190,7 @@ body {
 @media screen and (max-width: 800px) {
   .burger-menu {
     top: 11vh;
+    left: 35vw;
   }
 }
 
@@ -234,7 +235,7 @@ body {
 .menu__box {
   position: relative;
   left: -4em;
-  top: -24vh;
+  top: -33vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,15 +243,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   visibility: hidden;
   padding: 4em 2em 2em 2em;
   width: 100%;
-  max-width: 68vw;
+  max-width: 60vw;
   height: 100%;
-  max-height: 60vh;
+  max-height: 67vh;
   background: #e2e2f5;
   z-index: 6;
   border-radius: 20px;
+}
+@media screen and (max-width: 912px) {
+  .menu__box {
+    top: -13em;
+  }
 }
 
 .menu__item {
@@ -319,7 +328,7 @@ body {
 @media screen and (max-width: 800px) {
   .progress {
     position: relative;
-    top: 40vh;
+    top: 5vh;
     padding: 3em 8vw;
     margin-right: auto;
     margin-left: auto;
@@ -727,7 +736,7 @@ progress {
     position: absolute;
     padding-top: 0;
     width: 30%;
-    background-color: none;
+    background-color: transparent;
   }
 }
 @media screen and (max-width: 800px) {
@@ -735,7 +744,7 @@ progress {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    left: 17vw;
+    left: 20vw;
     top: 28vh;
   }
 }
@@ -751,8 +760,9 @@ progress {
 @media screen and (max-width: 800px) {
   .profile__navigation {
     position: relative;
-    left: -10vw;
+    left: -4vw;
     bottom: 20vh;
+    margin-bottom: 0;
   }
 }
 .profile__navigation-logout {
@@ -762,14 +772,20 @@ progress {
   text-decoration: none;
   color: #000000;
 }
+@media screen and (max-width: 800px) {
+  .profile__navigation-logout {
+    margin-right: 2em;
+  }
+}
 .profile__information {
   text-align: center;
   margin-bottom: 4em;
 }
 @media screen and (max-width: 800px) {
   .profile__information {
-    min-width: 38vw;
+    min-width: 40vw;
     position: relative;
+    bottom: 10vh;
     left: 20vw;
   }
 }
@@ -828,8 +844,8 @@ progress {
 }
 @media screen and (max-width: 800px) {
   .profile__levels {
-    position: absolute;
-    left: 80vw;
+    position: relative;
+    left: 40vw;
   }
 }
 .profile__levels-item {
@@ -888,9 +904,9 @@ progress {
 }
 @media screen and (max-width: 800px) {
   .profile__reminders {
-    max-width: 21vw;
-    position: absolute;
-    bottom: -10vh;
+    position: relative;
+    left: -90vw;
+    top: -8vh;
   }
 }
 .profile__reminders-title {

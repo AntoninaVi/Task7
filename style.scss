@@ -49,8 +49,8 @@ body {
         @media screen and (max-width: 1200px) {
             position: relative;
             visibility: visible;
-            z-index: 7;
-            left: 20em;
+            z-index: 1;
+            left: 23em;
             top: -3vh;
         }
     }
@@ -151,6 +151,7 @@ body {
     }
     @media screen and (max-width: 800px) {
         top: 11vh;
+        left: 35vw;
     }
 }
 
@@ -191,18 +192,22 @@ body {
 .menu__box {
     position: relative;
     left: -4em;
-    top: -24vh;
+    top: -33vh;
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     visibility: hidden;
     padding: 4em 2em 2em 2em;
     width: 100%;
-    max-width: 68vw;
+    max-width: 60vw;
     height: 100%;
-    max-height: 60vh;
+    max-height: 67vh;
     background: #e2e2f5;
     z-index: 6;
     border-radius: 20px;
+    @media screen and (max-width: 912px) {
+        top: -13em;
+    }
 }
 .menu__item {
     text-align: inherit;
@@ -213,7 +218,6 @@ body {
     color: #48464d;
     text-decoration: none;
     margin-bottom: 1em;
-  
 }
 .menu__box .headers__nav-button:first-of-type {
     margin-right: 0;
@@ -260,7 +264,7 @@ body {
     box-sizing: content-box;
     @media screen and (max-width: 800px) {
         position: relative;
-        top: 40vh;
+        top: 5vh;
         padding: 3em 8vw;
         margin-right: auto;
         margin-left: auto;
@@ -364,7 +368,7 @@ body {
             height: 29em;
             display: flex;
             flex-direction: column;
-            @media screen and (max-width: 800px){
+            @media screen and (max-width: 800px) {
                 width: 100%;
             }
         }
@@ -584,11 +588,11 @@ progress {
         position: absolute;
         padding-top: 0;
         width: 30%;
-        background-color: none;
+        background-color: transparent;
     }
     @media screen and (max-width: 800px) {
         display: flex;
-        left: 17vw;
+        left: 20vw;
         top: 28vh;
     }
 
@@ -598,8 +602,9 @@ progress {
         margin-bottom: 3em;
         @media screen and (max-width: 800px) {
             position: relative;
-            left: -10vw;
+            left: -4vw;
             bottom: 20vh;
+            margin-bottom: 0;
         }
     }
 
@@ -609,14 +614,18 @@ progress {
         line-height: 26px;
         text-decoration: none;
         color: #000000;
+        @media screen and (max-width: 800px) {
+            margin-right: 2em;
+        }
     }
 
     &__information {
         text-align: center;
         margin-bottom: 4em;
         @media screen and (max-width: 800px) {
-            min-width: 38vw;
+            min-width: 40vw;
             position: relative;
+            bottom: 10vh;
             left: 20vw;
         }
     }
@@ -677,8 +686,8 @@ progress {
             margin-bottom: 1em;
         }
         @media screen and (max-width: 800px) {
-            position: absolute;
-            left: 80vw;
+            position: relative;
+            left: 40vw;
         }
     }
 
@@ -742,9 +751,9 @@ progress {
         //     display: grid;
         // }
         @media screen and (max-width: 800px) {
-            max-width: 21vw;
-            position: absolute;
-            bottom: -10vh;
+            position: relative;
+            left: -90vw;
+            top: -8vh;
         }
     }
     &__reminders-title {
