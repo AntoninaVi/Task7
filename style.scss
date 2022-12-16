@@ -356,7 +356,7 @@ body {
     }
 
     &__bars-item {
-        padding: 0 1.7em 2.3em 1.7em;
+        padding: 0 1.7em 3em 1.7em;
         background: #fdfdfe;
         border-radius: 17px;
         &:first-child {
@@ -383,16 +383,19 @@ body {
     &__bars-item-content {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
         padding-top: 1.5em;
-        padding-bottom: 1.6em;
+        padding-bottom: 1.5em;
         border-bottom: 1px solid #000000;
+        white-space: nowrap;
         &:nth-child(1) {
             border: none;
             padding-top: 2.1em;
-            padding-bottom: 2.6em;
+            padding-bottom: 1em;
         }
         &:last-child {
             border: none;
+            padding-bottom:2.6em ;
         }
     }
 
@@ -420,11 +423,20 @@ body {
         font-size: 14px;
         line-height: 21px;
         color: #a2a2c2;
+        margin-left: 0.5em;
         margin-right: 3.1em;
         text-align: left;
         &:last-child {
             margin-right: 0;
         }
+    }
+    &__bars-item-count {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ff808b;
+        margin-left: 1em;
     }
     &__bars-item-subscriptions {
         display: flex;
@@ -580,22 +592,22 @@ body {
     &__courses-item-img {
     }
 }
-// progress {
-//     height: 5px;
-//     border: 0;
-//     border-radius: 20px;
-    
-// }
-// progress::-webkit-progress-bar {
-//     height: 5px;
-//     border: 0;
-//     border-radius: 20px;
-// }
-// progress::-webkit-progress-value {
-//     height: 5px;
-//     border: 0;
-//     border-radius: 20px;
-// }
+progress {
+    height: 5px;
+    border: 0;
+    border-radius: 20px;
+    width: 5.7em;
+}
+progress::-webkit-progress-bar {
+    height: 5px;
+    border: 0;
+    border-radius: 20px;
+}
+progress::-webkit-progress-value {
+    height: 5px;
+    border: 0;
+    border-radius: 20px;
+}
 // progress::-moz-progress-bar {
 //     height: 5px;
 //     border: 0;
@@ -614,8 +626,16 @@ body {
     appearance: none;
 }
 .progress__bars-item-bar::-webkit-progress-value {
-    background-image: linear-gradient(90deg, rgba(255,128,139,1) 30%, rgb(95, 93, 194) 30%, rgba(94,129,244,1) 30%, rgba(142,142,142,1) 30%, rgb(69, 66, 206) 100%, rgb(157, 157, 189) 60%);;
-    
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 128, 139, 1) 30%,
+        rgb(95, 93, 194) 30%,
+        rgba(94, 129, 244, 1) 30%,
+        rgba(142, 142, 142, 1) 30%,
+        rgb(69, 66, 206) 100%,
+        rgb(157, 157, 189) 60%
+    );
+
     // background-image: -webkit-linear-gradient(
     //         -45deg,
     //         transparent 33%,
@@ -625,7 +645,6 @@ body {
     //     ),
     //     -webkit-linear-gradient(top, rgba(247, 245, 245, 0.25), rgba(244, 225, 225, 0.25)),
     //     -webkit-linear-gradient(left, #09c, #f44);
-        
 
     border-radius: 10px;
     // background-size: 35px 20px, 100% 100%, 100% 100%;
