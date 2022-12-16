@@ -1113,7 +1113,7 @@ progress {
 .profile__reminders-content:nth-child(1) .profile__reminders-content-icon::after {
   content: "";
   position: absolute;
-  right: 1em;
+  right: 1.2em;
   width: 0.5em;
   height: 0.5em;
   background-color: #ff808b;
