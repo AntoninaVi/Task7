@@ -530,7 +530,7 @@ body {
         text-decoration: none;
     }
     &__courses-content-img {
-        margin-left: 1.3em;
+        margin-left: 6.3em;
     }
     &__courses-item {
         display: flex;
@@ -564,6 +564,15 @@ body {
     &__courses-item-text {
         display: flex;
         flex-direction: column;
+        max-width: 12.5em;
+        white-space: nowrap;
+    }
+    &__courses-item-link {
+        display: flex;
+        align-items: center;
+    }
+    &__courses-item-img{
+        margin-left: 4em;
     }
     &__courses-item-level {
         padding: 17px 19px;
