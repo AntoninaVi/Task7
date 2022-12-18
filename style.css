@@ -6,7 +6,8 @@
 }
 
 html {
-  height: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   color: #000000;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  min-width: 100vw;
 }
 
 .container {
@@ -29,7 +30,8 @@ body {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  min-width: 100vw;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -728,8 +730,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   max-width: 12.5em;
-  white-space: nowrap;
 }
 .progress__courses-item-link {
   display: -webkit-box;
@@ -738,6 +740,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 .progress__courses-item-img {
   margin-left: 4em;

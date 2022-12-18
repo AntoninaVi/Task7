@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 html {
-    height: 100%;
+    width: 100%;
+    max-width: 100%;
 }
 body {
     font-family: "Poppins";
@@ -12,14 +13,16 @@ body {
     color: #000000;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    min-width: 100vw;
 }
+
 .container {
     display: flex;
     align-items: center;
     align-self: stretch;
     height: 100%;
-    width: 100vw;
+    width: 100%;
+    min-width: 100vw;
     max-width: 1920px;
     margin: 0 auto;
     @media screen and (max-width: 1200px) {
@@ -564,14 +567,15 @@ body {
     &__courses-item-text {
         display: flex;
         flex-direction: column;
+        width: 100%;
         max-width: 12.5em;
-        white-space: nowrap;
     }
     &__courses-item-link {
         display: flex;
         align-items: center;
+        white-space: nowrap;
     }
-    &__courses-item-img{
+    &__courses-item-img {
         margin-left: 4em;
     }
     &__courses-item-level {
