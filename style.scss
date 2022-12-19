@@ -3,28 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-html,
-body {
-    height: 100%;
+html {
     width: 100%;
+    max-width: 100%;
+}
+body {
     font-family: "Poppins";
     font-style: normal;
     color: #000000;
+    height: 100%;
+    width: 100%;
+    min-width: 100vw;
 }
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-}
+
 .container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
+    flex-grow: 1;
+    height: 100vh;
     width: 100%;
+    min-width: 100vw;
     max-width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    min-height: 100vh;
+    margin: 0 auto;
     @media screen and (max-width: 1200px) {
         display: grid;
         grid-template-columns: 40% 50%;
@@ -258,7 +259,7 @@ body {
     &::before {
         content: "4";
         position: absolute;
-        left: 6.2em;
+        left: 1em;
         padding: 0.3em 0.5em;
         background-color: #ff808b;
         border-radius: 100%;
@@ -267,6 +268,9 @@ body {
         line-height: 13px;
         color: #fefefe;
     }
+}
+.main-menu__list-item:nth-of-type(5) {
+    position: relative;
 }
 
 .progress {
@@ -569,12 +573,11 @@ body {
         flex-direction: column;
         width: 100%;
         max-width: 12.5em;
-        white-space: nowrap;
     }
     &__courses-item-link {
         display: flex;
         align-items: center;
-        align-items: center;
+        white-space: nowrap;
     }
     &__courses-item-img {
         margin-left: 4em;
@@ -790,9 +793,6 @@ progress {
         width: 100%;
         &:nth-child(1) {
             margin-bottom: 2.5em;
-            // @media screen and (max-width: 1200px) {
-            //     margin-bottom: 0;
-            // }
         }
         @media screen and (max-width: 1200px) {
             flex-direction: column;
