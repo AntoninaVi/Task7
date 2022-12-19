@@ -3,27 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-html {
-    width: 100%;
-    max-width: 100%;
-}
+html,
 body {
     font-family: "Poppins";
     font-style: normal;
     color: #000000;
     height: 100%;
     width: 100%;
+    min-width: 100vw;
 }
 
 .container {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0em 1em;
+    max-width: 210em;
+
+
     @media screen and (max-width: 1200px) {
         display: grid;
         grid-template-columns: 40% 50%;
@@ -37,11 +33,14 @@ body {
 }
 
 .main-menu {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // display: grid;
+    // grid-template-columns: 1fr;
     background-color: #ffffff;
     padding: 3em 2.5em 1.5em 1em;
-    width: 60em;
+    max-width: 60em;
     @media screen and (max-width: 1200px) {
         display: none;
     }
@@ -107,6 +106,7 @@ body {
         padding: 0 30px 27px 30px;
         background: #f5f5fb;
         border-radius: 17px;
+        max-width: 13.8em;
         @media screen and (max-width: 1200px) {
             display: none;
         }
@@ -354,6 +354,8 @@ body {
 
     &__bars {
         display: flex;
+        width: 100%;
+        max-width: 40em;
         margin-bottom: 2.2em;
         @media screen and (max-width: 800px) {
             flex-direction: column;
@@ -376,7 +378,8 @@ body {
             }
         }
         &:last-child {
-            width: 34.8em;
+            width: 100%;
+            max-width: 34.8em;
             height: 29em;
             display: flex;
             flex-direction: column;
@@ -659,7 +662,7 @@ progress {
 
 .profile {
     background-color: #ffffff;
-    max-width: 60em;
+    max-width: 26em;
     padding-top: 3em;
     padding-left: 2.8em;
     padding-right: 2em;
