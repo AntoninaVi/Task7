@@ -3,28 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
-html {
-    width: 100%;
-    max-width: 100%;
-}
+
+html,
 body {
+    height: 100%;
+    width: 100%;
     font-family: "Poppins";
     font-style: normal;
     color: #000000;
-    height: 100%;
-    width: 100%;
-    min-width: 100vw;
 }
-
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+}
 .container {
     display: flex;
-    align-items: center;
-    align-self: stretch;
-    height: 100%;
+    justify-content: center;
+    flex: 1 1 auto;
     width: 100%;
-    min-width: 100vw;
     max-width: 1920px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh;
     @media screen and (max-width: 1200px) {
         display: grid;
         grid-template-columns: 40% 50%;
@@ -569,11 +569,12 @@ body {
         flex-direction: column;
         width: 100%;
         max-width: 12.5em;
+        white-space: nowrap;
     }
     &__courses-item-link {
         display: flex;
         align-items: center;
-        white-space: nowrap;
+        align-items: center;
     }
     &__courses-item-img {
         margin-left: 4em;
