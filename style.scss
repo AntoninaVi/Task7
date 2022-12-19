@@ -19,9 +19,8 @@ body {
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    height: 100vh;
+    align-self: stretch;
+    height: 100%;
     width: 100%;
     min-width: 100vw;
     max-width: 1920px;
@@ -793,6 +792,9 @@ progress {
         width: 100%;
         &:nth-child(1) {
             margin-bottom: 2.5em;
+            // @media screen and (max-width: 1200px) {
+            //     margin-bottom: 0;
+            // }
         }
         @media screen and (max-width: 1200px) {
             flex-direction: column;
