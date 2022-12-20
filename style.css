@@ -22,8 +22,8 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 19% 56% 26%;
-  grid-template-columns: 19% 56% 26%;
+  -ms-grid-columns: 23% 55% 20%;
+  grid-template-columns: 23% 55% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -137,6 +137,7 @@ body {
   transition: ease-in-out 0.3s;
 }
 .main-menu__upgrade {
+  max-width: 13.8em;
   text-align: center;
   padding: 0 30px 27px 30px;
   background: #f5f5fb;
@@ -148,13 +149,13 @@ body {
   }
 }
 .main-menu__upgrade-img {
-  width: 6.5em;
+  max-width: 6.5em;
   margin-left: auto;
   margin-right: auto;
   margin-top: -2em;
 }
 .main-menu__upgrade-subscription {
-  width: 9.8em;
+  max-width: 9.8em;
   margin-left: auto;
   margin-right: auto;
   font-weight: 400;
@@ -341,7 +342,6 @@ body {
 .progress {
   background-color: #f5f5fb;
   max-width: 63.8em;
-  width: 90%;
   padding: 2em 3em;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -447,11 +447,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.2em;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 1680px) {
+  .progress__bars {
+    -webkit-transform: scale3d(0.8, 0.8, 0.8);
+            transform: scale3d(0.8, 0.8, 0.8);
+  }
 }
 @media screen and (max-width: 800px) {
   .progress__bars {
@@ -471,7 +475,7 @@ body {
 }
 .progress__bars-item:first-child {
   margin-right: 2em;
-  width: 26.8em;
+  width: 27vw;
   height: 29em;
 }
 @media screen and (max-width: 800px) {
@@ -482,7 +486,7 @@ body {
   }
 }
 .progress__bars-item:last-child {
-  width: 34.8em;
+  width: 34.8vw;
   height: 29em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,7 +552,7 @@ body {
   line-height: 21px;
   color: #a2a2c2;
   margin-left: 0.5em;
-  margin-right: 3.1em;
+  margin-right: 2.1vw;
   text-align: left;
 }
 .progress__bars-item-subscription:last-child {
@@ -572,6 +576,8 @@ body {
   margin-bottom: 1.7em;
 }
 .progress__bars-item-bars {
+  position: relative;
+  left: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,7 +585,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 3em;
-  margin-left: 2.9em;
+  margin-left: -1em;
   margin-bottom: 3.2em;
   height: 12.2em;
 }
@@ -633,9 +639,14 @@ body {
   background-color: #c8c9e9;
 }
 .progress__courses-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 1em 32% 1em 32%;
+  grid-template-columns: 32% 32% 32%;
+  gap: 1em;
+  block-size: -webkit-fit-content;
+  block-size: -moz-fit-content;
+  block-size: fit-content;
 }
 @media screen and (max-width: 1280px) {
   .progress__courses-items {
@@ -698,7 +709,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 20.1em;
+  max-width: 20.1vw;
   width: 100%;
   padding: 1.4em;
 }
@@ -831,8 +842,8 @@ progress {
   background-color: #ffffff;
   max-width: 29.3em;
   padding-top: 3em;
-  padding-left: 2.8em;
-  padding-right: 5.6em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 @media screen and (max-width: 1280px) {
   .profile {
@@ -984,16 +995,23 @@ progress {
   }
 }
 .profile__levels-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   max-width: 21.8em;
-  width: 100%;
+}
+@media screen and (max-width: 1680px) {
+  .profile__levels-item {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .profile__levels-item:nth-child(1) {
   margin-bottom: 2.5em;
