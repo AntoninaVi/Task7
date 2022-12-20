@@ -5,28 +5,34 @@
           box-sizing: border-box;
 }
 
-html,
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
 body {
   font-family: "Poppins";
   font-style: normal;
   color: #000000;
   height: 100%;
   width: 100%;
-  min-width: 100vw;
+  margin: 0;
 }
 
 .container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 19% 56% 26%;
+  grid-template-columns: 19% 56% 26%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
   width: 100%;
-  max-width: 210em;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .container {
     display: -ms-grid;
     display: grid;
@@ -51,20 +57,14 @@ body {
 }
 
 .main-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   background-color: #ffffff;
-  padding: 3em 2.5em 1.5em 1em;
-  max-width: 60em;
+  padding: 3em 2.5em 1.5em 4.1em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .main-menu {
     display: none;
   }
@@ -78,7 +78,7 @@ body {
           align-items: center;
   margin-bottom: 7.7em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .main-menu__logotype {
     position: relative;
     visibility: visible;
@@ -107,7 +107,7 @@ body {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .main-menu__list {
     display: none;
   }
@@ -141,9 +141,8 @@ body {
   padding: 0 30px 27px 30px;
   background: #f5f5fb;
   border-radius: 17px;
-  max-width: 13.8em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .main-menu__upgrade {
     display: none;
   }
@@ -179,15 +178,32 @@ body {
   border-radius: 14px;
 }
 
+.main-menu__list-item:nth-of-type(5)::before {
+  content: "4";
+  position: absolute;
+  left: 1em;
+  padding: 0.3em 0.5em;
+  background-color: #ff808b;
+  border-radius: 100%;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 13px;
+  color: #fefefe;
+}
+
+.main-menu__list-item:nth-of-type(5) {
+  position: relative;
+}
+
 .burger-menu {
   display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .burger-menu {
     display: block;
     position: relative;
     left: 36vw;
-    top: -19em;
+    top: 3em;
   }
 }
 @media screen and (max-width: 800px) {
@@ -322,26 +338,10 @@ body {
   visibility: visible;
 }
 
-.main-menu__list-item:nth-of-type(5)::before {
-  content: "4";
-  position: absolute;
-  left: 1em;
-  padding: 0.3em 0.5em;
-  background-color: #ff808b;
-  border-radius: 100%;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 13px;
-  color: #fefefe;
-}
-
-.main-menu__list-item:nth-of-type(5) {
-  position: relative;
-}
-
 .progress {
   background-color: #f5f5fb;
-  width: 63.8em;
+  max-width: 63.8em;
+  width: 90%;
   padding: 2em 3em;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -446,9 +446,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 40em;
   margin-bottom: 2.2em;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 800px) {
   .progress__bars {
@@ -479,8 +482,7 @@ body {
   }
 }
 .progress__bars-item:last-child {
-  width: 100%;
-  max-width: 34.8em;
+  width: 34.8em;
   height: 29em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,7 +591,6 @@ body {
   text-align: left;
   margin-left: -9em;
   width: 100%;
-  min-width: 14em;
   height: 5px;
 }
 .progress__bars-item-skills {
@@ -636,7 +637,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .progress__courses-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -656,7 +657,7 @@ body {
           justify-content: space-between;
   margin-bottom: 2.1em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .progress__courses-content {
     margin-bottom: 1em;
   }
@@ -706,7 +707,7 @@ body {
   border-radius: 20px;
   margin-right: 1.5em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .progress__courses-item:nth-child(1) {
     margin-right: 0;
     margin-bottom: 1em;
@@ -717,7 +718,7 @@ body {
   border-radius: 20px;
   margin-right: 1.5em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .progress__courses-item:nth-child(2) {
     margin-right: 0;
     margin-bottom: 1em;
@@ -828,12 +829,12 @@ progress {
 
 .profile {
   background-color: #ffffff;
-  max-width: 26em;
+  max-width: 29.3em;
   padding-top: 3em;
   padding-left: 2.8em;
-  padding-right: 2em;
+  padding-right: 5.6em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .profile {
     position: absolute;
     top: 1em;
@@ -885,7 +886,7 @@ progress {
   text-align: center;
   margin-bottom: 4em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .profile__information {
     margin-bottom: 1em;
   }
@@ -960,7 +961,7 @@ progress {
 .profile__levels {
   margin-bottom: 5.5em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .profile__levels {
     margin-bottom: 1em;
   }
@@ -997,7 +998,7 @@ progress {
 .profile__levels-item:nth-child(1) {
   margin-bottom: 2.5em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .profile__levels-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1011,7 +1012,7 @@ progress {
   max-width: 7.8em;
   width: 100%;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .profile__levels-item-content {
     text-align: center;
     margin: 1em 0 1em 0;
@@ -1110,7 +1111,7 @@ progress {
   white-space: nowrap;
   margin-bottom: 8px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .profile__reminders-content-title {
     margin-top: 1em;
   }
