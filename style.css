@@ -36,12 +36,13 @@ body {
   .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% 1rem 50%;
-    grid-template-columns: 40% 50%;
+    -ms-grid-columns: 23% 1rem 74%;
+    grid-template-columns: 23% 74%;
     grid-gap: 1rem;
+    overflow: hidden;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53,6 +54,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -89,7 +93,7 @@ body {
     position: relative;
     visibility: visible;
     z-index: 1;
-    left: 23em;
+    left: 5em;
     top: -3vh;
   }
 }
@@ -213,10 +217,10 @@ body {
     top: 3em;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .burger-menu {
     top: 11vh;
-    left: 35vw;
+    left: 20vw;
   }
 }
 @media screen and (max-width: 500px) {
@@ -284,8 +288,9 @@ body {
           align-items: baseline;
   visibility: hidden;
   padding: 4em 2em 2em 2em;
-  width: 100%;
-  max-height: 110vh;
+  width: 150%;
+  max-width: 100vw;
+  max-height: 80vh;
   height: 100%;
   background: #e2e2f5;
   z-index: 6;
@@ -352,13 +357,14 @@ body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .progress {
     position: relative;
     top: 5vh;
     padding: 3em 8vw;
     margin-right: auto;
     margin-left: auto;
+    width: 80%;
   }
 }
 .progress__navigation {
@@ -412,7 +418,7 @@ body {
   border-radius: 17px;
   margin-bottom: 2.7em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .progress__main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -443,7 +449,7 @@ body {
       -ms-flex-pack: right;
           justify-content: right;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .progress__main-img {
     margin-top: 0;
   }
@@ -459,11 +465,17 @@ body {
 }
 @media screen and (max-width: 1680px) {
   .progress__bars {
-    -webkit-transform: scale3d(0.8, 0.8, 0.8);
-            transform: scale3d(0.8, 0.8, 0.8);
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1280px) {
+  .progress__bars {
+    -webkit-transform: scale3d(1.1, 1, 1);
+            transform: scale3d(1.1, 1, 1);
+  }
+}
+@media screen and (max-width: 1140px) {
   .progress__bars {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -484,7 +496,7 @@ body {
   width: 27vw;
   height: 29em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .progress__bars-item:first-child {
     margin-right: 0;
     margin-bottom: 1em;
@@ -502,7 +514,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .progress__bars-item:last-child {
     width: 100%;
   }
@@ -644,6 +656,11 @@ body {
 .progress__bars-item-skills--paragraph:nth-of-type(4)::before {
   background-color: #c8c9e9;
 }
+@media screen and (max-width: 1280px) {
+  .progress__bars-item-skills--paragraph {
+    margin-right: 1em;
+  }
+}
 .progress__courses-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,9 +681,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    max-width: 21em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .progress__courses-content {
@@ -683,7 +700,7 @@ body {
     margin-bottom: 1em;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .progress__courses-content {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -857,18 +874,19 @@ progress {
   .profile {
     position: absolute;
     top: 1em;
+    left: 2em;
     padding-top: 0.5em;
-    width: 30%;
+    width: 25%;
     background-color: transparent;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile {
     padding-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    left: 20vw;
+    left: 1vw;
     top: 28vh;
   }
 }
@@ -881,10 +899,15 @@ progress {
           justify-content: space-between;
   margin-bottom: 3em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1280px) {
+  .profile__navigation {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1140px) {
   .profile__navigation {
     position: relative;
-    left: -4vw;
+    left: 4vw;
     bottom: 20vh;
     margin-bottom: 0;
   }
@@ -896,7 +919,7 @@ progress {
   text-decoration: none;
   color: #000000;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile__navigation-logout {
     margin-right: 2em;
   }
@@ -910,7 +933,7 @@ progress {
     margin-bottom: 1em;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile__information {
     min-width: 40vw;
     position: relative;
@@ -918,9 +941,14 @@ progress {
     left: 20vw;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 920px) {
   .profile__information {
-    min-width: 76vw;
+    left: 16vw;
+  }
+}
+@media screen and (max-width: 740px) {
+  .profile__information {
+    min-width: 30vw;
   }
 }
 @media screen and (max-width: 430px) {
@@ -939,7 +967,7 @@ progress {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile__information-photo {
     max-height: 19em;
     max-width: 20em;
@@ -963,6 +991,12 @@ progress {
   color: #5e81f4;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+}
+@media screen and (max-width: 1130px) {
+  .profile__information-button {
+    top: -2em;
+    right: 2.5em;
+  }
 }
 .profile__information-title {
   font-weight: 700;
@@ -996,19 +1030,32 @@ progress {
 }
 @media screen and (max-width: 1280px) {
   .profile__levels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 1em;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile__levels {
     position: relative;
-    left: 40vw;
-    bottom: 5vh;
+    left: 23vw;
+    bottom: 11vh;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 920px) {
   .profile__levels {
-    left: 24vw;
+    left: 26vw;
   }
 }
 @media screen and (max-width: 430px) {
@@ -1091,16 +1138,16 @@ progress {
   -ms-grid-columns: 60%;
   grid-template-columns: 60%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile__reminders {
     position: relative;
-    left: -90vw;
+    left: -50vw;
     top: -11vh;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 920px) {
   .profile__reminders {
-    left: -140vw;
+    left: -64vw;
   }
 }
 @media screen and (max-width: 430px) {
@@ -1132,7 +1179,7 @@ progress {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1140px) {
   .profile__reminders-content {
     position: relative;
     top: -5vh;
