@@ -19,7 +19,9 @@ body {
     display: grid;
     grid-template-columns: 18% 60% 23%;
     justify-content: center;
+    align-items: stretch;
     width: 100%;
+    min-height: 100vh;
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +47,6 @@ body {
     padding: 3em 2.5em 1.5em 1.5em;
     // max-width: 10em;
     @media screen and (max-width: 1680px) {
-       
     }
     @media screen and (max-width: 1280px) {
         display: none;
@@ -93,7 +94,7 @@ body {
         line-height: 26px;
         text-decoration: none;
         color: #111026;
-        margin-bottom: 3.3em;
+        margin-bottom: 2.9em;
         &:last-child {
             margin-bottom: 8.5em;
         }
@@ -116,7 +117,7 @@ body {
         padding: 0 30px 27px 30px;
         background: #f5f5fb;
         border-radius: 17px;
-        @media screen and (max-width: 1680px){
+        @media screen and (max-width: 1680px) {
             transform: scale(0.9);
         }
         @media screen and (max-width: 1280px) {
@@ -515,12 +516,7 @@ body {
         text-align: left;
         margin-left: -9em;
         width: 100%;
-        // min-width: 14em;
         height: 5px;
-        // @media screen and (max-width:1680px){
-        //     // min-width: 10em;
-        //     width: 50%;
-        // }
     }
     &__bars-item-skills {
         display: flex;
@@ -880,7 +876,7 @@ progress {
         grid-template-rows: 30% 21%;
         gap: 2.3em;
         max-width: 20em;
-        margin-bottom: 5.5em;
+        margin-bottom: 4em;
         @media screen and (max-width: 1680px) {
             transform: scale3d(0.8, 0.8, 0.8);
             position: relative;
@@ -923,9 +919,6 @@ progress {
         align-items: center;
         max-width: 21.8em;
 
-        // @media screen and (max-width: 1680px) {
-          
-        // }
         &:nth-child(1) {
             margin-bottom: 2.5em;
             @media screen and (max-width: 520px) {

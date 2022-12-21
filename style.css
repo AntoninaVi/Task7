@@ -27,7 +27,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 100%;
+  min-height: 100vh;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +131,7 @@ body {
   line-height: 26px;
   text-decoration: none;
   color: #111026;
-  margin-bottom: 3.3em;
+  margin-bottom: 2.9em;
 }
 .main-menu__list-item:last-child {
   margin-bottom: 8.5em;
@@ -1123,7 +1127,7 @@ progress {
   grid-template-rows: 30% 21%;
   gap: 2.3em;
   max-width: 20em;
-  margin-bottom: 5.5em;
+  margin-bottom: 4em;
 }
 @media screen and (max-width: 1680px) {
   .profile__levels {
