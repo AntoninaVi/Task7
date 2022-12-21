@@ -22,8 +22,8 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 23% 55% 20%;
-  grid-template-columns: 23% 55% 20%;
+  -ms-grid-columns: 17% 61% 24%;
+  grid-template-columns: 17% 61% 24%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -62,7 +62,7 @@ body {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   background-color: #ffffff;
-  padding: 3em 2.5em 1.5em 4.1em;
+  padding: 3em 2.5em 1.5em 1.5em;
 }
 @media screen and (max-width: 1280px) {
   .main-menu {
@@ -137,7 +137,7 @@ body {
   transition: ease-in-out 0.3s;
 }
 .main-menu__upgrade {
-  max-width: 13.8em;
+  max-width: 13em;
   text-align: center;
   padding: 0 30px 27px 30px;
   background: #f5f5fb;
@@ -639,14 +639,18 @@ body {
   background-color: #c8c9e9;
 }
 .progress__courses-items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 32% 1em 32% 1em 32%;
-  grid-template-columns: 32% 32% 32%;
-  gap: 1em;
-  block-size: -webkit-fit-content;
-  block-size: -moz-fit-content;
-  block-size: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 1680px) {
+  .progress__courses-items {
+    -webkit-transform: scale3d(0.8, 0.8, 0.8);
+            transform: scale3d(0.8, 0.8, 0.8);
+  }
 }
 @media screen and (max-width: 1280px) {
   .progress__courses-items {
@@ -709,7 +713,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 20.1vw;
   width: 100%;
   padding: 1.4em;
 }
@@ -840,10 +843,9 @@ progress {
 
 .profile {
   background-color: #ffffff;
-  max-width: 29.3em;
   padding-top: 3em;
   padding-left: 2em;
-  padding-right: 2em;
+  padding-right: 1em;
 }
 @media screen and (max-width: 1280px) {
   .profile {
@@ -970,6 +972,12 @@ progress {
   color: #a2a2c2;
 }
 .profile__levels {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 34% 2.3em 21%;
+  grid-template-rows: 34% 21%;
+  gap: 2.3em;
+  max-width: 20em;
   margin-bottom: 5.5em;
 }
 @media screen and (max-width: 1280px) {
@@ -995,9 +1003,9 @@ progress {
   }
 }
 .profile__levels-item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -1007,7 +1015,6 @@ progress {
 }
 @media screen and (max-width: 1680px) {
   .profile__levels-item {
-    display: block;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -1060,6 +1067,15 @@ progress {
   color: #a2a2c2;
   margin: 0;
   white-space: nowrap;
+}
+.profile__levels-item-progressbar {
+  max-width: 5.3em;
+}
+.profile__reminders {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60%;
+  grid-template-columns: 60%;
 }
 @media screen and (max-width: 800px) {
   .profile__reminders {
