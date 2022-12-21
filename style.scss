@@ -179,14 +179,11 @@ body {
         top: 3em;
     }
     @media screen and (max-width: 1140px) {
-        top: 11vh;
-        left: 20vw;
+        top: 6vh;
+        left: 16vw;
     }
-    @media screen and (max-width: 500px) {
-        left: 63vw;
-    }
-    @media screen and (max-width: 370px) {
-        left: 95vw;
+    @media screen and (max-width: 470px) {
+        left: 1em;
     }
 }
 
@@ -240,11 +237,10 @@ body {
     background: #e2e2f5;
     z-index: 6;
     border-radius: 20px;
-    @media screen and (max-width: 440px) {
-        max-width: 90vw;
+    @media screen and (max-width: 540px) {
+        max-width: 70vw;
     }
     @media screen and (max-width: 375px) {
-        top: -13em;
     }
 }
 .menu__item {
@@ -375,6 +371,9 @@ body {
         @media screen and (max-width: 1140px) {
             flex-direction: column;
             align-items: center;
+            max-width: 34em;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 
@@ -708,7 +707,13 @@ progress {
         padding-top: 0;
         display: flex;
         left: 1vw;
-        top: 28vh;
+        top: 24vh;
+    }
+    @media screen and (max-width: 640px) {
+        left: -6vw;
+    }
+    @media screen and (max-width: 480px) {
+        transform: scale(0.9);
     }
 
     &__navigation {
@@ -724,6 +729,11 @@ progress {
             bottom: 20vh;
             margin-bottom: 0;
         }
+        @media screen and (max-width: 470px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
     }
 
     &__navigation-logout {
@@ -734,6 +744,10 @@ progress {
         color: #000000;
         @media screen and (max-width: 1140px) {
             margin-right: 2em;
+        }
+        @media screen and (max-width: 470px) {
+            margin-right: 0;
+            margin-bottom: 1em;
         }
     }
 
@@ -752,11 +766,15 @@ progress {
         @media screen and (max-width: 920px) {
             left: 16vw;
         }
-        @media screen and (max-width: 740px){
-            min-width: 30vw;
+        @media screen and (max-width: 740px) {
+            min-width: 34vw;
         }
-        @media screen and (max-width: 430px) {
-            left: 45vw;
+        @media screen and (max-width: 610px) {
+            left: 23vw;
+        }
+        @media screen and (max-width: 520px) {
+            top: -10em;
+            left: 12em;
         }
     }
 
@@ -835,9 +853,16 @@ progress {
         }
         @media screen and (max-width: 920px) {
             left: 26vw;
+            bottom: 17vh;
         }
-        @media screen and (max-width: 430px) {
-            left: 68vw;
+        @media screen and (max-width: 520px) {
+            flex-direction: row;
+            align-items: center;
+            left: -5em;
+            top: -1em;
+        }
+        @media screen and (max-width: 470px){
+            left: 1em;
         }
     }
 
@@ -852,6 +877,9 @@ progress {
         }
         &:nth-child(1) {
             margin-bottom: 2.5em;
+            @media screen and (max-width: 520px) {
+                margin: 0;
+            }
         }
         @media screen and (max-width: 1280px) {
             flex-direction: column;
@@ -906,8 +934,16 @@ progress {
         @media screen and (max-width: 920px) {
             left: -64vw;
         }
-        @media screen and (max-width: 430px) {
-            left: -145vw;
+        @media screen and (max-width: 550px) {
+            left: -24em;
+        }
+        @media screen and (max-width: 520px) {
+            top: -5em;
+            left: -31em;
+        }
+        @media screen and (max-width: 480px) {
+            top: -5em;
+            left: -27em;
         }
     }
     &__reminders-title {
