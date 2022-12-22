@@ -594,25 +594,22 @@ body {
     &__courses-content-link {
         display: flex;
         align-items: center;
-        justify-content: space-around;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #111026;
         text-decoration: none;
     }
-    &__courses-item-img {
-        margin: 0;
-        color: #ffffff;
-        width: 2em;
+    &__courses-content-img {
+        margin-left: 1.3em;
     }
+
     &__courses-item {
         display: flex;
         align-items: center;
         width: 100%;
         min-width: 17em;
         max-width: 20em;
-
         padding: 1.4em;
         &:nth-child(1) {
             background-color: #4d4cac;
@@ -642,6 +639,11 @@ body {
         flex-direction: column;
         width: 100%;
         max-width: 12.5em;
+    }
+    &__courses-item-img {
+        margin: 0;
+        color: #ffffff;
+        width: 2em;
     }
     &__courses-item-link {
         display: flex;
