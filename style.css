@@ -928,7 +928,7 @@ progress {
   .profile {
     position: absolute;
     top: 1em;
-    left: 1em;
+    left: -0.5em;
     padding-top: 0.5em;
     width: 25%;
     background-color: transparent;
