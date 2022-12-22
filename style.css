@@ -241,6 +241,11 @@ body {
     left: 1em;
   }
 }
+@media screen and (max-width: 375px) {
+  .burger-menu {
+    left: 2em;
+  }
+}
 
 #menu__toggle {
   position: absolute;
@@ -298,7 +303,7 @@ body {
   padding: 4em 2em 2em 2em;
   width: 150%;
   max-width: 100vw;
-  max-height: 80vh;
+  max-height: 85vh;
   height: 100%;
   background: #e2e2f5;
   z-index: 6;
@@ -311,8 +316,8 @@ body {
 }
 @media screen and (max-width: 375px) {
   .menu__box {
-    left: 2em;
-    max-width: 90vw;
+    left: -2.8em;
+    max-width: 88vw;
   }
 }
 
