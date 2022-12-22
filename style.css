@@ -785,8 +785,10 @@ body {
   color: #111026;
   text-decoration: none;
 }
-.progress__courses-content-img {
-  margin-left: 1.5em;
+.progress__courses-item-img {
+  margin: 0;
+  color: #ffffff;
+  width: 2em;
 }
 .progress__courses-item {
   display: -webkit-box;
@@ -796,6 +798,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  min-width: 17em;
+  max-width: 20em;
   padding: 1.4em;
 }
 .progress__courses-item:nth-child(1) {
@@ -843,9 +847,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;
-}
-.progress__courses-item-img {
-  margin-left: 4em;
 }
 .progress__courses-item-level {
   padding: 17px 19px;
